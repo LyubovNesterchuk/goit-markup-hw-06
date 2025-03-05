@@ -48,7 +48,96 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-button" type="button" data-modal-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
+      <!-- #region mobile-menu -->
+      <div class="mobile-menu is-open" data-modal>
+        <div class="container mobile-menu-container">
+          <button class="close-button" type="button" data-modal-close>
+            <svg class="close-icone" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-nav-list">
+              <li>
+                <a class="mobile-menu-nav-link current" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li><a class="mobile-menu-nav-link" href="#">Portfolio</a></li>
+              <li><a class="mobile-menu-nav-link" href="# ">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <address class="mobile-menu-address">
+            <ul class="mobile-menu-contacts-list">
+              <li class="mobile-menu-contacts-item">
+                <a
+                  class="mobile-menu-contacts-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="mobile-menu-contacts-item">
+                <a class="mobile-menu-contacts-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobile-menu-social-links-list">
+            <li class="mobile-menu-social-links-item">
+              <a class="mobile-menu-social-links" href="#">
+                <svg
+                  class="mobile-menu-social-link-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-instagram"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-menu-social-links-item">
+              <a class="mobile-menu-social-links" href="#">
+                <svg
+                  class="mobile-menu-social-link-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-menu-social-links-item">
+              <a class="mobile-menu-social-links" href="#">
+                <svg
+                  class="mobile-menu-social-link-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="mobile-menu-social-links-item">
+              <a class="mobile-menu-social-links" href="#">
+                <svg
+                  class="mobile-menu-social-link-icon"
+                  width="24"
+                  height="24"
+                >
+                  <use href="./images/icons.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- #endregion mobile-menu -->
     </header>
     <!-- #endregion header -->
     <main>
@@ -74,7 +163,7 @@
                 </svg>
               </div>
               <h3 class="section-item advantages-item">Strategy</h3>
-              <p class="section-description">
+              <p class="advantages-section-description">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -86,7 +175,7 @@
                 </svg>
               </div>
               <h3 class="section-item advantages-item">Punctuality</h3>
-              <p class="section-description">
+              <p class="advantages-section-description">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -98,7 +187,7 @@
                 </svg>
               </div>
               <h3 class="section-item advantages-item">Diligence</h3>
-              <p class="section-description">
+              <p class="advantages-section-description">
                 Research and confirm brands with the strongest digital growth
                 opportunities and minimize risk.
               </p>
@@ -110,7 +199,7 @@
                 </svg>
               </div>
               <h3 class="section-item advantages-item">Technologies</h3>
-              <p class="section-description">
+              <p class="advantages-section-description">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -489,10 +578,10 @@
       </div>
     </footer>
     <!-- #endregion Footer -->
+
     <!-- #region modal window  -->
     <!-- is-open -->
-
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-open" data-modal>
       <div class="modal-container">
         <button class="close-button" type="button" data-modal-close>
           <svg class="close-icon" width="8" height="8">
@@ -559,7 +648,7 @@
           <div class="modal-form-field comment">
             <label class="form-label" for="user-comment">Comment</label>
             <textarea
-              class="user-comment"
+              class="form-input user-comment"
               name="user-comment"
               id="user-comment"
               placeholder="Text input"
@@ -579,8 +668,10 @@
                 <svg class="checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg> </span
-              >I accept the terms and conditions of the
-              <a class="privacy-link" href="#">Privacy Policy</a>
+              ><span class="privacy-policy-text"
+                >I accept the terms and conditions of the
+                <a class="privacy-link" href="#">Privacy Policy</a></span
+              >
             </label>
           </div>
 
@@ -588,8 +679,8 @@
         </form>
       </div>
     </div>
-
-    <script src="/js/modal.js"></script>
     <!-- #endregion modal window  -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
