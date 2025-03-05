@@ -541,7 +541,7 @@ img {
 /* #endregion footer */
 
 /* #region modal window */
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -761,5 +761,5 @@ input:checked + label > span {
   text-align: center;
   padding: 16px 32px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 /* #endregion modal window */
