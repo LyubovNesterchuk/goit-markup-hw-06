@@ -933,7 +933,6 @@ img {
 @media screen and (min-width: 768px) {
   .footer-container {
     width: 584px;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -943,16 +942,11 @@ img {
 
   .footer-logo-container,
   .social-links-container,
-  .subscribe-container,
-  .footer-form {
-    display: flex;
-    flex-direction: column;
+  .subscribe-container {
     align-items: start;
-    gap: 16px;
   }
 
   .footer-form {
-    display: flex;
     flex-direction: row;
     align-items: start;
     gap: 24px;
@@ -985,11 +979,6 @@ img {
 
   .subscribe-container {
     margin-left: auto;
-  }
-
-  .footer-form {
-    display: flex;
-    gap: 24px;
   }
 }
 
