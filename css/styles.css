@@ -63,7 +63,7 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
@@ -314,7 +314,7 @@ img {
   background-color: #404bbf;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
@@ -322,7 +322,7 @@ img {
 
 /* #endregion mobile-menu*/
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .burger-button {
     display: none;
   }
@@ -584,12 +584,10 @@ img {
   font-size: 16px;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .advantages-list {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     gap: 24px;
     row-gap: 72px;
     align-items: flex-start;
@@ -600,7 +598,6 @@ img {
     font-size: 36px;
     line-height: 1.11;
     text-align: start;
-    margin-bottom: 8px;
   }
 
   .advantages-list-item {
@@ -673,7 +670,6 @@ img {
 
 .team-item {
   margin-bottom: 8px;
-  text-transform: capitalize;
   text-align: center;
 }
 
@@ -714,7 +710,7 @@ img {
   background-color: #404bbf;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .team-container {
     width: 584px;
   }
@@ -797,7 +793,7 @@ img {
   margin-bottom: 8px;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .portfolio-list {
     display: flex;
     flex-direction: row;
@@ -945,7 +941,7 @@ img {
   background-color: #31d0aa;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .footer-container {
     width: 584px;
     display: flex;
@@ -1087,9 +1083,6 @@ img {
 
 .modal-description {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
   margin-bottom: 16px;
