@@ -452,7 +452,7 @@ img {
   background-size: cover;
 }
 
-@media screen and (max-width: 719px) and (min-resolution: 192dpi) {
+@media screen and (max-width: 767px) and (min-resolution: 192dpi) {
   .hero-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -489,7 +489,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .hero-section {
     max-width: 768px;
     padding-top: 112px;
@@ -508,7 +508,7 @@ img {
   }
 }
 
-@media screen and (min-width: 720px) and (min-resolution: 192dpi) {
+@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
   .hero-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -636,12 +636,12 @@ img {
 /* #endregion Advantages section */
 
 /* #region Team section */
-.team-container {
-  width: 296px;
-}
-
 .team-section {
   background: #f4f4fd;
+}
+
+.team-container {
+  width: 296px;
 }
 
 .team-list {
@@ -655,13 +655,11 @@ img {
   background-color: #ffffff;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  height: 428px;
   width: 100%;
 }
 
 .team-desc-container {
-  padding: 32px 0;
-  justify-content: center;
+  padding: 32px 16px;
 }
 
 .team-item {
